@@ -1,15 +1,6 @@
 const inquirer = require("inquirer");
 const mysql = require("mysql2");
-// const consoleTable = require("console.table");
 require("dotenv").config();
-// const sequelize = require("./Config/connection")
-
-
-
-// // Syncs the database with created models
-// sequelize.sync({ force: false }).then(() => {
-//   options();
-// });
 
 
 // create a MySQL connection
@@ -30,8 +21,7 @@ connection.connect((err) => {
 });
 
 
-
-// Function to Start Thomas SQL Employee Tracker Application
+// Function to Start 
 function start() {
     inquirer
         .prompt({
@@ -421,7 +411,7 @@ function updateEmployeeRole() {
     });
 }
 
-// Remember: iPad forced push to origin main deleted local stash that fixed bonus question for salary summary
+
 // Function to View Employee By Manager
 function viewEmployeesByManager() {
     const query = `
