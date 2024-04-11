@@ -134,18 +134,21 @@ function addDepartment() {
     inquirer
         .prompt({
             type: "input",
-            name: "name",
+            name: "department",
             message: "Enter the name of the new department:",
         })
         .then((answer) => {
-            console.log(answer.name);
-            const query = `INSERT INTO departments (department_name) VALUES ("${answer.name}")`;
-            connection.query(query, (err, res) => {
+            
+            const query = `INSERT INTO departments (department_name) VALUES ("${answer.department}")`;
+            connection.query(query, 
+                
+                (err, res) => {
                 if (err) throw err;
-                console.log(`Added department ${answer.name} to the database!`);
+                console.log(`Added department ${answer.department} to the database!`);
+               
                 // restart the application
                 start();
-                console.log(answer.name);
+                
             });
         });
 }

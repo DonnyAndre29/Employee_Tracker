@@ -1,6 +1,6 @@
 # Employee Tracker
 
-## Your Task
+## Task
 
 Build a command-line application from scratch to manage a company's employee database, using Node.js, Inquirer, and MySQL.
 
@@ -35,16 +35,23 @@ WHEN I choose to update an employee role
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database 
 ```
 
-## Mock-Up
+## Visuals
 
 The following video shows an example of the application being used from the command line:
 
-[![A video thumbnail shows the command-line employee management application with a play button overlaying the view.](./Assets/12-sql-homework-video-thumbnail.png)](https://2u-20.wistia.com/medias/2lnle7xnpk)
+[![Employee Tracker](./Assets/Untitled_%20Apr%2011,%202024%2010_19%20AM.gif)]
 
 
-## Visuals
+## Installation
 
+Inquirer v.8.2.4
 
+Sequelize
+
+MySQL
+
+DotENV
 
 ## License
 
+MIT
